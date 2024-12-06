@@ -1,0 +1,18 @@
+:root {
+    --color-primary: #191970;
+    --color-primary-2: #8A2BE2;
+
+    --white: #F5F5F5;
+    --gray: #333333;
+    --black: #0F0F10;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black);
+}
