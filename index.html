@@ -20,7 +20,9 @@
   <link rel="stylesheet" href="/css/navbar.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/footer.css">
-  
+
+  <!-- Page Custom CSS -->
+  <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
@@ -42,7 +44,111 @@
       </div>
     </nav>
   </header>
-  <main class="container vh-100">
+  <main class="container">
+
+    <!-- Cover Photo -->
+    <section>
+      <div class="cover-photo w-100">
+        <img class="w-100 h-100" src="https://www.entertainment-nation.co.uk/act_media/2276/large/heads-up-profile.jpg"
+          alt="Cover Photo">
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section>
+      <div class="about-us">
+        <h2 class="text-center">About Us</h2>
+        <p class="text-center">
+          Welcome to <b class="logo-font">Four the Music-Heads</b>, where the rhythm of passion meets the melody of
+          discovery. Born from a love
+          for all things music, we are more than just a destination — we’re a community for enthusiasts who live and
+          breathe sound. From vinyl classics to today’s digital masterpieces, we celebrate the diverse and ever-evolving
+          world of music. Whether you’re here to explore curated playlists, dive into artist spotlights, or find your
+          next live concert adventure, Four the Music-Heads is your stage for inspiration. Join us in fostering a
+          lifelong love affair with music, one beat at a time.
+        </p>
+      </div>
+    </section>
+
+    <!-- Music -->
+    <section>
+      <div class="music">
+        <h2 class="text-center">Music</h2>
+        <p class="text-center">
+          Dive into the world of sound with our curated playlists, artist spotlights, and more. Whether you’re a fan of
+          classic rock, hip-hop, or indie pop, we’ve got something for everyone. Discover new tracks, revisit old
+          favorites, and explore the stories behind the music that moves you.
+        </p>
+        <div class="text-center"><a href="/pages/music.html" class="btn btn-accent">Explore Music</a></div>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section class="schedule">
+      <div>
+        <h2 class="text-center">Schedule</h2>
+        <p class="text-center">
+          Stay up to date on the latest concerts, festivals, and events happening near you. From intimate club shows to
+          massive outdoor festivals, we’ve got the inside scoop on the hottest tickets in town. Don’t miss out on your
+          chance to catch your favorite artists live in action.
+        </p>
+        <div class="text-center"><a href="/pages/schedule.html" class="btn btn-accent">View Schedule</a></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <div class="contact">
+        <h2 class="text-center">Contact</h2>
+        <p class="text-center">Want to schedule an event with us? Contact us below</p>
+        <div class="text-center">
+          <button type="button" class="btn btn-accent bounce" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="first-name" placeholder="Enter your first name" required>
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="last-name" placeholder="Enter your last name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"
+                  required></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-accent">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </main>
   <footer class="footer-container">

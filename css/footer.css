@@ -47,6 +47,10 @@
     margin: 0 10px;
 }
 
+.footer-quick-links a:hover {
+    color: var(--accent-1);
+}
+
 .footer-quick-links ul {
     padding: 0;
     display: flex;
@@ -67,4 +71,8 @@
 .footer-logo a {
     color:  var(--white);
     text-decoration: none;
+}
+
+.footer-logo a:hover {
+    color: var(--accent-1);
 }

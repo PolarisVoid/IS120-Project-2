@@ -39,6 +39,10 @@
     margin: 0 10px;
 }
 
+.nav-links a:hover {
+    color: var(--accent-1);
+}
+
 .nav-logo {
     color: var(--white);
     font-size: 1.5rem;
@@ -49,4 +53,8 @@
 .nav-logo a {
     color:  var(--white);
     text-decoration: none;
+}
+
+.nav-logo a:hover {
+    color: var(--accent-1);
 }
