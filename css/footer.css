@@ -63,9 +63,22 @@
 
 .footer-logo {
     color: var(--white);
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     font-family: 'New Rocker', cursive;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-logo {
+        display: none;
+    }
+    .footer-contact {
+        display: none;
+    }
+    .footer-right-container {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .footer-logo a {
@@ -75,4 +88,10 @@
 
 .footer-logo a:hover {
     color: var(--accent-1);
+}
+
+.footer-contact p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
 }
