@@ -31,3 +31,13 @@
     background-color: var(--black);
     color: var(--white);
 }
+
+.schedule-table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.schedule-table table {
+    width: 50%;
+}
