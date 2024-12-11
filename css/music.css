@@ -1,0 +1,39 @@
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+main {
+    min-height: 100vh;
+    padding: 1rem;
+    color: var(--black);
+}
+
+.music-grid section {
+    height: 325px;
+}
+
+.music-grid a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.card-body p {
+    color: #333a
+}
+
+.music-grid a:hover {
+    color: var(--accent-1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
