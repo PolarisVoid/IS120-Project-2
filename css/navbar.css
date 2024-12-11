@@ -44,17 +44,34 @@
 }
 
 .nav-logo {
-    color: var(--white);
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'New Rocker', cursive;
+    animation: colorhue 5s infinite linear;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-logo {
+        display: none;
+    }
 }
 
 .nav-logo a {
-    color:  var(--white);
+    background-image: linear-gradient(var(--accent-1), var(--color-primary-2));
+    color: transparent;
+    background-clip: text;
     text-decoration: none;
 }
 
 .nav-logo a:hover {
     color: var(--accent-1);
+}
+
+@keyframes colorhue {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
